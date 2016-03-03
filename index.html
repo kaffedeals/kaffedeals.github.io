@@ -75,9 +75,14 @@
               <hr>
               <p>Kaffedeals lists the best urban cafes in your country. 100% hand-picked collection, always fresh. Register your interest now to be the first to access our inspirational offers.</p>
 
-              <form class="form form-inline">
-                <input type="email" class="form-control input-lg" placeholder="your email">
-                <button type="submit" class="btn btn-primary btn-xl page-scroll">Register your interest</button>
+              <form name="register1" novalidate class="form form-inline form-register">
+                <div class="control-group">
+                  <div class="form-group">
+                    <input type="email" class="form-control input-lg" placeholder="your email" id="email" required data-validation-required-message="Please enter your email address.">
+                    <button type="submit" class="btn btn-primary btn-xl">Register your interest</button>
+                    <p class="help-block text-faded success"></p>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
@@ -142,9 +147,14 @@
                 <h2 class="section-heading">Be the first to get our deals</h2>
                 <hr class="primary">
                 <div class="box">
-                  <form class="form form-inline">
-                    <input type="email" class="form-control input-lg" placeholder="your email">
-                    <button type="submit" class="btn btn-primary btn-xl page-scroll">Register your interest</button>
+                  <form name="register2" novalidate class="form form-inline form-register">
+                    <div class="control-group">
+                      <div class="form-group">
+                        <input type="email" class="form-control input-lg" placeholder="your email" id="email" required data-validation-required-message="Please enter your email address.">
+                        <button type="submit" class="btn btn-primary btn-xl">Register your interest</button>
+                        <p class="help-block text-faded success"></p>
+                      </div>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -167,6 +177,11 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="js/creative.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/mandrill.js"></script>
+        <script src="js/contact_me.js"></script>
 
       </body>
 
